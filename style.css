@@ -1,58 +1,96 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
-body{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    background-color:rgb(230, 238, 238);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #d9f0edc6;
+    font-family: Arial, sans-serif; /* Default font */
 }
+
 .container {
-   min-height:50vh;
-   min-width:40vh;
+    min-height: 50vh;
+    min-width: 40vh;
     background-color: #fff;
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     margin: 20px auto;
-  }
-  form{
-    margin:2rem 0 1rem 0;  /* top and bottom margin */
-   
-  }
-  form select,button,input{
-    width:100%;
-    border:none;   /* removed default border */
-    outline:none;
-    border-radius:0.85rem;
-  }
-  form input{
-    border:1px solid rgba(199, 189, 189, 0.406);
-    font-size:1rem;
-    padding-left:0.5rem;
-    height:3rem;
-  }
-  /*from and to dropdown to be in the same line */
-  .dropdown{
-    display:flex;
-    justify-content:space-between; /*both in ends*/
-    align-items:center;
-    margin-top:2rem;
-   
-  }
-  .select-container img{
+}
+
+form {
+    margin: 2rem 0 1rem 0;
+}
+
+form select,
+button,
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.85rem;
+    font-size: 1rem;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+form input {
+    border: 1px solid rgba(199, 189, 189, 0.406);
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.dropdown i {
+    font-size: 1.5rem;
+}
+
+.select-container img {
     max-width: 2rem;
-  }
-  /*usd and in dropdown*/
-  .select-container{
-    /*img and dropdown to be in the same line*/
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:6rem;
-    border-radius:0.5rem;
-    
-    border:1px solid rgba(199, 189, 189, 0.406);
-  }
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(199, 189, 189, 0.406);
+    padding: 0.5rem;
+}
+
+.select-container select {
+    font-size: 1rem;
+    width: auto;
+    appearance: none; /* Remove default arrow */
+}
+
+.msg {
+    margin: 2rem 0;
+}
+
+form button {
+    height: 3rem;
+    background-color: #b1ead5;
+    color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.85rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+form button:hover {
+    background-color: #8ac6b9;
+}
