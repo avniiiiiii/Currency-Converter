@@ -22,9 +22,37 @@ body{
     margin:2rem 0 1rem 0;  /* top and bottom margin */
    
   }
-  .form select,button,input{
+  form select,button,input{
     width:100%;
     border:none;   /* removed default border */
+    outline:none;
+    border-radius:0.85rem;
+  }
+  form input{
+    border:1px solid rgba(199, 189, 189, 0.406);
+    font-size:1rem;
+    padding-left:0.5rem;
+    height:3rem;
+  }
+  /*from and to dropdown to be in the same line */
+  .dropdown{
+    display:flex;
+    justify-content:space-between; /*both in ends*/
+    align-items:center;
+    margin-top:2rem;
+   
+  }
+  .select-container img{
+    max-width: 2rem;
+  }
+  /*usd and in dropdown*/
+  .select-container{
+    /*img and dropdown to be in the same line*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:6rem;
+    border-radius:0.5rem;
     
-    
+    border:1px solid rgba(199, 189, 189, 0.406);
   }
